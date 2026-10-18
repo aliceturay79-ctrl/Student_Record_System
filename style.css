@@ -1,0 +1,2233 @@
+/* GENERAL STYLING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;find .. -name "style.css"
+    font-family: Arial, sans-serif;find .. -name "style.css"
+    background-color: #f5f8f2;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background-color: #176b35;
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c9f7a5;
+}
+
+/* HOME HERO SECTION */
+.hero {
+    background: linear-gradient(135deg, #dff0d8, #b9dfb0);
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    color: #176b35;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* BUTTONS */
+.button {
+    display: inline-block;
+    background-color: #176b35;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #104d26;
+}
+
+/* PRODUCTS SECTION */
+.products {
+    padding: 55px 6%;
+    text-align: center;
+}
+
+.products h2,
+.mission h2 {
+    color: #176b35;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.intro {
+    margin-bottom: 30px;
+}
+
+/* PRODUCT CARDS */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 18px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.product-card h3 {
+    color: #176b35;
+    margin-bottom: 8px;
+}
+
+.product-card p {
+    margin-bottom: 5px;
+}
+
+/* MISSION SECTION */
+.mission {
+    background-color: #e7f1e3;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.mission p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* FOOTER */
+footer {
+    background-color: #124d29;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* TABLETS AND MOBILE PHONES */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 60px 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* FARMlink MARKETPLACE STYLING */
+
+.marketplace-intro {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #eaf5e9;
+    margin: 20px 0;
+}
+
+.marketplace-intro h2 {
+    color: #245c35;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.marketplace-intro p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.shop-button,
+.farmer-button {
+    display: inline-block;
+    background-color: #287a3d;
+    color: white;
+    padding: 14px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.shop-button:hover,
+.farmer-button:hover {
+    background-color: #19552b;
+}
+
+.product-categories,
+.featured-products,
+.how-it-works,
+.featured-farmers,
+.why-choose-farmlink {
+    padding: 50px 6%;
+    text-align: center;
+}
+
+.product-categories h2,
+.featured-products h2,
+.how-it-works h2,
+.featured-farmers h2,
+.why-choose-farmlink h2 {
+    color: #245c35;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.category-container,
+.product-container,
+.steps-container,
+.farmers-container,
+.benefits-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.category-card,
+.product-card,
+.step-card,
+.farmer-card,
+.benefit-card {
+    background-color: #ffffff;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover,
+.product-card:hover,
+.step-card:hover,
+.farmer-card:hover,
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-card h3,
+.product-card h3,
+.step-card h3,
+.farmer-card h3,
+.benefit-card h3 {
+    color: #287a3d;
+    margin-bottom: 12px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-card .price {
+    color: #287a3d;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product-card button {
+    background-color: #287a3d;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.product-card button:hover {
+    background-color: #19552b;
+}
+
+.farmer-cta {
+    text-align: center;
+    padding: 65px 20px;
+    background-color: #245c35;
+    color: white;
+}
+
+.farmer-cta h2 {
+    font-size: 34px;
+    margin-bottom: 18px;
+}
+
+.farmer-cta p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.farmer-cta .farmer-button {
+    background-color: #ffffff;
+    color: #245c35;
+}
+
+.farmlink-footer {
+    background-color: #173d25;
+    color: white;
+    padding: 45px 6% 20px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.farmlink-footer h2,
+.farmlink-footer h3 {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .marketplace-intro h2 {
+        font-size: 28px;
+    }
+
+    .product-categories h2,
+    .featured-products h2,
+    .how-it-works h2,
+    .featured-farmers h2,
+    .why-choose-farmlink h2 {
+        font-size: 26px;
+    }
+}
+/* FARMLINK PRODUCT SEARCH */
+
+.product-search {
+    background-color: #f3f8f0;
+    padding: 45px 20px;
+    text-align: center;
+}
+
+.product-search h2 {
+    color: #245c35;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.product-search p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    max-width: 650px;
+    margin: 25px auto 0;
+    gap: 10px;
+}
+
+.search-form input {
+    flex: 1;
+    min-width: 0;
+    padding: 15px;
+    border: 2px solid #287a3d;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-form input:focus {
+    border-color: #174c28;
+    box-shadow: 0 0 5px rgba(40, 122, 61, 0.3);
+}
+
+.search-form button {
+    background-color: #287a3d;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #19552b;
+}
+
+#searchMessage {
+    margin-top: 18px;
+    font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    .search-form {
+        flex-direction: column;
+    }
+
+    .search-form button {
+        width: 100%;
+    }
+}
+/* FARMLINK ABOUT PAGE */
+
+.about-hero {
+    background: linear-gradient(135deg, #245c35, #3c8d50);
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.about-hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.about-hero p {
+    font-size: 21px;
+    line-height: 1.7;
+}
+
+.about-introduction,
+.about-story,
+.about-audience {
+    padding: 60px 10%;
+    text-align: center;
+    line-height: 1.9;
+}
+
+.about-introduction h2,
+.about-story h2,
+.about-values h2,
+.about-audience h2,
+.about-community h2 {
+    color: #245c35;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-introduction p,
+.about-story p,
+.about-audience p {
+    max-width: 950px;
+    margin: 15px auto;
+    font-size: 17px;
+    color: #444;
+}
+
+.about-story {
+    background-color: #f1f7ee;
+}
+
+.about-mission-vision {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 50px 8%;
+}
+
+.mission-card,
+.vision-card {
+    background-color: #245c35;
+    color: white;
+    padding: 35px;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 1.8;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.mission-card h2,
+.vision-card h2 {
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.mission-card p,
+.vision-card p {
+    font-size: 16px;
+}
+
+.about-values {
+    background-color: #f7faf5;
+    padding: 60px 6%;
+    text-align: center;
+}
+
+.values-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.value-card {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    border-bottom: 4px solid #287a3d;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.value-card h3 {
+    color: #287a3d;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.value-card p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.about-community {
+    background-color: #eaf5e9;
+    padding: 70px 20px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.about-community p {
+    max-width: 850px;
+    margin: 0 auto 20px;
+    color: #444;
+    font-size: 17px;
+}
+
+.about-button {
+    display: inline-block;
+    background-color: #287a3d;
+    color: white;
+    padding: 14px 28px;
+    margin-top: 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-button:hover {
+    background-color: #19552b;
+}
+
+@media (max-width: 600px) {
+    .about-hero h1 {
+        font-size: 34px;
+    }
+
+    .about-hero p {
+        font-size: 17px;
+    }
+
+    .about-introduction,
+    .about-story,
+    .about-audience {
+        padding: 40px 6%;
+    }
+
+    .about-introduction h2,
+    .about-story h2,
+    .about-values h2,
+    .about-audience h2,
+    .about-community h2 {
+        font-size: 26px;
+    }
+}
+/* FARMLINK SERVICES PAGE */
+
+.services-hero {
+    background: linear-gradient(135deg, #245c35, #3c8d50);
+    color: white;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.services-hero h1 {
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.services-hero p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.services-introduction {
+    padding: 60px 8%;
+    text-align: center;
+    line-height: 1.9;
+}
+
+.services-introduction h2,
+.services-process h2,
+.services-farmers h2 {
+    color: #245c35;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.services-introduction p {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #444;
+    font-size: 17px;
+}
+
+.services-list {
+    background-color: #f3f8f0;
+    padding: 60px 6%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background-color: white;
+    padding: 30px 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-bottom: 4px solid #287a3d;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+}
+
+.service-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    color: #245c35;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #555;
+    line-height: 1.8;
+}
+
+.services-process {
+    padding: 65px 6%;
+    text-align: center;
+}
+
+.services-process > p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.service-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.service-step {
+    padding: 30px 20px;
+    background-color: #eaf5e9;
+    border-radius: 12px;
+}
+
+.service-step span {
+    display: inline-block;
+    color: white;
+    background-color: #287a3d;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 12px 18px;
+    border-radius: 50%;
+    margin-bottom: 18px;
+}
+
+.service-step h3 {
+    color: #245c35;
+    margin-bottom: 12px;
+}
+
+.service-step p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.services-farmers {
+    background-color: #245c35;
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.services-farmers h2 {
+    color: white;
+}
+
+.services-farmers p {
+    max-width: 800px;
+    margin: 0 auto 25px;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.services-button {
+    display: inline-block;
+    background-color: white;
+    color: #245c35;
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.services-button:hover {
+    background-color: #eaf5e9;
+}
+
+@media (max-width: 600px) {
+    .services-hero h1 {
+        font-size: 34px;
+    }
+
+    .services-introduction h2,
+    .services-process h2,
+    .services-farmers h2 {
+        font-size: 26px;
+    }
+}
+/* FARMLINK PRODUCTS MARKETPLACE */
+
+.products-hero {
+    background: linear-gradient(135deg, #245c35, #3c8d50);
+    color: white;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.products-hero h1 {
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.products-hero p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.products-welcome {
+    text-align: center;
+    padding: 55px 8%;
+}
+
+.products-welcome h2,
+.products-categories h2,
+.products-featured h2,
+.products-buying-guide h2 {
+    color: #245c35;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.products-welcome p {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #555;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.products-categories {
+    background: #f3f8f0;
+    text-align: center;
+    padding: 60px 6%;
+}
+
+.products-category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.products-category-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.products-category-card:hover {
+    transform: translateY(-5px);
+}
+
+.products-category-card span {
+    font-size: 42px;
+}
+
+.products-category-card h3 {
+    color: #287a3d;
+    margin: 15px 0;
+}
+
+.products-category-card p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.products-featured {
+    padding: 65px 6%;
+    text-align: center;
+}
+
+.products-featured > p {
+    color: #555;
+    line-height: 1.8;
+}
+
+.products-market-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
+    margin-top: 35px;
+    text-align: left;
+}
+
+.market-product-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.10);
+    transition: transform 0.3s ease;
+}
+
+.market-product-card:hover {
+    transform: translateY(-6px);
+}
+
+.market-product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.market-product-info {
+    padding: 22px;
+}
+
+.product-category-label {
+    display: inline-block;
+    background: #eaf5e9;
+    color: #245c35;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.market-product-info h3 {
+    color: #245c35;
+    font-size: 22px;
+    margin: 15px 0 10px;
+}
+
+.market-product-info p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.market-product-info .market-price {
+    color: #287a3d;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.market-product-button {
+    display: inline-block;
+    background: #287a3d;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.market-product-button:hover {
+    background: #19552b;
+}
+
+.products-note {
+    background: #fff8df;
+    padding: 16px;
+    border-radius: 6px;
+    margin-top: 35px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.products-buying-guide {
+    background: #f3f8f0;
+    padding: 65px 6%;
+    text-align: center;
+}
+
+.buying-guide-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.buying-guide-grid > div {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+.buying-guide-grid span {
+    display: inline-block;
+    color: white;
+    background: #287a3d;
+    padding: 12px 17px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.buying-guide-grid h3 {
+    color: #245c35;
+    margin-bottom: 12px;
+}
+
+.buying-guide-grid p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.products-farmer-cta {
+    background: #245c35;
+    color: white;
+    padding: 65px 20px;
+    text-align: center;
+}
+
+.products-farmer-cta h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.products-farmer-cta p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.products-farmer-cta a {
+    display: inline-block;
+    background: white;
+    color: #245c35;
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.products-farmer-cta a:hover {
+    background: #eaf5e9;
+}
+
+@media (max-width: 600px) {
+    .products-hero h1 {
+        font-size: 34px;
+    }
+
+    .products-welcome h2,
+    .products-categories h2,
+    .products-featured h2,
+    .products-buying-guide h2 {
+        font-size: 26px;
+    }
+
+    .market-product-card img {
+        height: 200px;
+    }
+}
+```css
+/* FARMLINK CONTACT PAGE */
+
+.contact-hero {
+    background: linear-gradient(135deg, #245c35, #3c8d50);
+    color: white;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.contact-hero h1 {
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.contact-hero p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.contact-introduction {
+    text-align: center;
+    padding: 55px 8%;
+}
+
+.contact-introduction h2,
+.contact-faq h2 {
+    color: #245c35;
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+.contact-introduction p {
+    max-width: 850px;
+    margin: 0 auto;
+    color: #555;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.contact-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 35px;
+    padding: 60px 7%;
+    background: #f3f8f0;
+    align-items: start;
+}
+
+.contact-information,
+.contact-form-container {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.contact-information h2,
+.contact-form-container h2 {
+    color: #245c35;
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.contact-information > p,
+.contact-form-container > p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 25px;
+    padding: 18px;
+    background: #f3f8f0;
+    border-radius: 8px;
+}
+
+.contact-detail > span {
+    font-size: 28px;
+}
+
+.contact-detail h3 {
+    color: #287a3d;
+    margin-bottom: 8px;
+}
+
+.contact-detail p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.farmlink-contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.farmlink-contact-form label {
+    color: #245c35;
+    font-weight: bold;
+    margin: 15px 0 8px;
+}
+
+.farmlink-contact-form input,
+.farmlink-contact-form select,
+.farmlink-contact-form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.farmlink-contact-form input:focus,
+.farmlink-contact-form select:focus,
+.farmlink-contact-form textarea:focus {
+    outline: 2px solid #287a3d;
+    border-color: #287a3d;
+}
+
+.farmlink-contact-form textarea {
+    resize: vertical;
+}
+
+.farmlink-contact-form button {
+    background: #287a3d;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 22px;
+}
+
+.farmlink-contact-form button:hover {
+    background: #19552b;
+}
+
+#contactFormMessage {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.contact-faq {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.contact-faq > p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.faq-container {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    background: #f3f8f0;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #287a3d;
+}
+
+.faq-item summary {
+    color: #245c35;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1.6;
+}
+
+.faq-item p {
+    color: #555;
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+.contact-farmer-section {
+    background: #245c35;
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.contact-farmer-section h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.contact-farmer-section p {
+    max-width: 800px;
+    margin: 0 auto 25px;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.contact-farmer-section a {
+    display: inline-block;
+    background: white;
+    color: #245c35;
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-farmer-section a:hover {
+    background: #eaf5e9;
+}
+
+@media (max-width: 600px) {
+    .contact-hero h1 {
+        font-size: 34px;
+    }
+
+    .contact-introduction h2,
+    .contact-faq h2,
+    .contact-farmer-section h2 {
+        font-size: 26px;
+    }
+
+    .contact-information,
+    .contact-form-container {
+        padding: 25px 20px;
+    }
+}
+```css
+/* FARMLINK CONTACT PAGE */
+
+.contact-hero {
+    background: linear-gradient(135deg, #245c35, #3c8d50);
+    color: white;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.contact-hero h1 {
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.contact-hero p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.contact-introduction {
+    text-align: center;
+    padding: 55px 8%;
+}
+
+.contact-introduction h2,
+.contact-faq h2 {
+    color: #245c35;
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+.contact-introduction p {
+    max-width: 850px;
+    margin: 0 auto;
+    color: #555;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.contact-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 35px;
+    padding: 60px 7%;
+    background: #f3f8f0;
+    align-items: start;
+}
+
+.contact-information,
+.contact-form-container {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.contact-information h2,
+.contact-form-container h2 {
+    color: #245c35;
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.contact-information > p,
+.contact-form-container > p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 25px;
+    padding: 18px;
+    background: #f3f8f0;
+    border-radius: 8px;
+}
+
+.contact-detail > span {
+    font-size: 28px;
+}
+
+.contact-detail h3 {
+    color: #287a3d;
+    margin-bottom: 8px;
+}
+
+.contact-detail p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.farmlink-contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.farmlink-contact-form label {
+    color: #245c35;
+    font-weight: bold;
+    margin: 15px 0 8px;
+}
+
+.farmlink-contact-form input,
+.farmlink-contact-form select,
+.farmlink-contact-form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.farmlink-contact-form input:focus,
+.farmlink-contact-form select:focus,
+.farmlink-contact-form textarea:focus {
+    outline: 2px solid #287a3d;
+    border-color: #287a3d;
+}
+
+.farmlink-contact-form textarea {
+    resize: vertical;
+}
+
+.farmlink-contact-form button {
+    background: #287a3d;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 22px;
+}
+
+.farmlink-contact-form button:hover {
+    background: #19552b;
+}
+
+#contactFormMessage {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.contact-faq {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.contact-faq > p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.faq-container {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    background: #f3f8f0;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #287a3d;
+}
+
+.faq-item summary {
+    color: #245c35;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1.6;
+}
+
+.faq-item p {
+    color: #555;
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+.contact-farmer-section {
+    background: #245c35;
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.contact-farmer-section h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.contact-farmer-section p {
+    max-width: 800px;
+    margin: 0 auto 25px;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.contact-farmer-section a {
+    display: inline-block;
+    background: white;
+    color: #245c35;
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-farmer-section a:hover {
+    background: #eaf5e9;
+}
+
+@media (max-width: 600px) {
+    .contact-hero h1 {
+        font-size: 34px;
+    }
+
+    .contact-introduction h2,
+    .contact-faq h2,
+    .contact-farmer-section h2 {
+        font-size: 26px;
+    }
+
+    .contact-information,
+    .contact-form-container {
+        padding: 25px 20px;
+    }
+}
+```
+```css
+/* FARMLINK CONTACT PAGE */
+
+.contact-hero {
+    background: linear-gradient(135deg, #245c35, #3c8d50);
+    color: white;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.contact-hero h1 {
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.contact-hero p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.contact-introduction {
+    text-align: center;
+    padding: 55px 8%;
+}
+
+.contact-introduction h2,
+.contact-faq h2 {
+    color: #245c35;
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+.contact-introduction p {
+    max-width: 850px;
+    margin: 0 auto;
+    color: #555;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.contact-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 35px;
+    padding: 60px 7%;
+    background: #f3f8f0;
+    align-items: start;
+}
+
+.contact-information,
+.contact-form-container {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.contact-information h2,
+.contact-form-container h2 {
+    color: #245c35;
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.contact-information > p,
+.contact-form-container > p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 25px;
+    padding: 18px;
+    background: #f3f8f0;
+    border-radius: 8px;
+}
+
+.contact-detail > span {
+    font-size: 28px;
+}
+
+.contact-detail h3 {
+    color: #287a3d;
+    margin-bottom: 8px;
+}
+
+.contact-detail p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.farmlink-contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.farmlink-contact-form label {
+    color: #245c35;
+    font-weight: bold;
+    margin: 15px 0 8px;
+}
+
+.farmlink-contact-form input,
+.farmlink-contact-form select,
+.farmlink-contact-form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.farmlink-contact-form input:focus,
+.farmlink-contact-form select:focus,
+.farmlink-contact-form textarea:focus {
+    outline: 2px solid #287a3d;
+    border-color: #287a3d;
+}
+
+.farmlink-contact-form textarea {
+    resize: vertical;
+}
+
+.farmlink-contact-form button {
+    background: #287a3d;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 22px;
+}
+
+.farmlink-contact-form button:hover {
+    background: #19552b;
+}
+
+#contactFormMessage {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.contact-faq {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.contact-faq > p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.faq-container {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    background: #f3f8f0;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #287a3d;
+}
+
+.faq-item summary {
+    color: #245c35;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1.6;
+}
+
+.faq-item p {
+    color: #555;
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+.contact-farmer-section {
+    background: #245c35;
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.contact-farmer-section h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.contact-farmer-section p {
+    max-width: 800px;
+    margin: 0 auto 25px;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.contact-farmer-section a {
+    display: inline-block;
+    background: white;
+    color: #245c35;
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-farmer-section a:hover {
+    background: #eaf5e9;
+}
+
+@media (max-width: 600px) {
+    .contact-hero h1 {
+        font-size: 34px;
+    }
+
+    .contact-introduction h2,
+    .contact-faq h2,
+    .contact-farmer-section h2 {
+        font-size: 26px;
+    }
+
+    .contact-information,
+    .contact-form-container {
+        padding: 25px 20px;
+    }
+}
+```css
+/* FARMLINK CONTACT PAGE */
+
+.contact-hero {
+    background: linear-gradient(135deg, #245c35, #3c8d50);
+    color: white;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.contact-hero h1 {
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.contact-hero p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.contact-introduction {
+    text-align: center;
+    padding: 55px 8%;
+}
+
+.contact-introduction h2,
+.contact-faq h2 {
+    color: #245c35;
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+.contact-introduction p {
+    max-width: 850px;
+    margin: 0 auto;
+    color: #555;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.contact-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 35px;
+    padding: 60px 7%;
+    background: #f3f8f0;
+    align-items: start;
+}
+
+.contact-information,
+.contact-form-container {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.contact-information h2,
+.contact-form-container h2 {
+    color: #245c35;
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.contact-information > p,
+.contact-form-container > p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 25px;
+    padding: 18px;
+    background: #f3f8f0;
+    border-radius: 8px;
+}
+
+.contact-detail > span {
+    font-size: 28px;
+}
+
+.contact-detail h3 {
+    color: #287a3d;
+    margin-bottom: 8px;
+}
+
+.contact-detail p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.farmlink-contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.farmlink-contact-form label {
+    color: #245c35;
+    font-weight: bold;
+    margin: 15px 0 8px;
+}
+
+.farmlink-contact-form input,
+.farmlink-contact-form select,
+.farmlink-contact-form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.farmlink-contact-form input:focus,
+.farmlink-contact-form select:focus,
+.farmlink-contact-form textarea:focus {
+    outline: 2px solid #287a3d;
+    border-color: #287a3d;
+}
+
+.farmlink-contact-form textarea {
+    resize: vertical;
+}
+
+.farmlink-contact-form button {
+    background: #287a3d;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 22px;
+}
+
+.farmlink-contact-form button:hover {
+    background: #19552b;
+}
+
+#contactFormMessage {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.contact-faq {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.contact-faq > p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.faq-container {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    background: #f3f8f0;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #287a3d;
+}
+
+.faq-item summary {
+    color: #245c35;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1.6;
+}
+
+.faq-item p {
+    color: #555;
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+.contact-farmer-section {
+    background: #245c35;
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.contact-farmer-section h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.contact-farmer-section p {
+    max-width: 800px;
+    margin: 0 auto 25px;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.contact-farmer-section a {
+    display: inline-block;
+    background: white;
+    color: #245c35;
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-farmer-section a:hover {
+    background: #eaf5e9;
+}
+
+@media (max-width: 600px) {
+    .contact-hero h1 {
+        font-size: 34px;
+    }
+
+    .contact-introduction h2,
+    .contact-faq h2,
+    .contact-farmer-section h2 {
+        font-size: 26px;
+    }
+
+    .contact-information,
+    .contact-form-container {
+        padding: 25px 20px;
+    }
+}
+```
+```css
+/* FARMLINK CONTACT PAGE */
+
+.contact-hero {
+    background: linear-gradient(135deg, #245c35, #3c8d50);
+    color: white;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.contact-hero h1 {
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.contact-hero p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.contact-introduction {
+    text-align: center;
+    padding: 55px 8%;
+}
+
+.contact-introduction h2,
+.contact-faq h2 {
+    color: #245c35;
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+.contact-introduction p {
+    max-width: 850px;
+    margin: 0 auto;
+    color: #555;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.contact-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 35px;
+    padding: 60px 7%;
+    background: #f3f8f0;
+    align-items: start;
+}
+
+.contact-information,
+.contact-form-container {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.contact-information h2,
+.contact-form-container h2 {
+    color: #245c35;
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.contact-information > p,
+.contact-form-container > p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 25px;
+    padding: 18px;
+    background: #f3f8f0;
+    border-radius: 8px;
+}
+
+.contact-detail > span {
+    font-size: 28px;
+}
+
+.contact-detail h3 {
+    color: #287a3d;
+    margin-bottom: 8px;
+}
+
+.contact-detail p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.farmlink-contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.farmlink-contact-form label {
+    color: #245c35;
+    font-weight: bold;
+    margin: 15px 0 8px;
+}
+
+.farmlink-contact-form input,
+.farmlink-contact-form select,
+.farmlink-contact-form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.farmlink-contact-form input:focus,
+.farmlink-contact-form select:focus,
+.farmlink-contact-form textarea:focus {
+    outline: 2px solid #287a3d;
+    border-color: #287a3d;
+}
+
+.farmlink-contact-form textarea {
+    resize: vertical;
+}
+
+.farmlink-contact-form button {
+    background: #287a3d;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 22px;
+}
+
+.farmlink-contact-form button:hover {
+    background: #19552b;
+}
+
+#contactFormMessage {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.contact-faq {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.contact-faq > p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.faq-container {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    background: #f3f8f0;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #287a3d;
+}
+
+.faq-item summary {
+    color: #245c35;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1.6;
+}
+
+.faq-item p {
+    color: #555;
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+.contact-farmer-section {
+    background: #245c35;
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.contact-farmer-section h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.contact-farmer-section p {
+    max-width: 800px;
+    margin: 0 auto 25px;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.contact-farmer-section a {
+    display: inline-block;
+    background: white;
+    color: #245c35;
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-farmer-section a:hover {
+    background: #eaf5e9;
+}
+
+@media (max-width: 600px) {
+    .contact-hero h1 {
+        font-size: 34px;
+    }
+
+    .contact-introduction h2,
+    .contact-faq h2,
+    .contact-farmer-section h2 {
+        font-size: 26px;
+    }
+
+    .contact-information,
+    .contact-form-container {
+        padding: 25px 20px;
+    }
+}
+```
+.contact-btn {
+display: inline-block;
+background-color: #2e7d32;
+color: white;
+padding: 10px 18px;
+text-decoration: none;
+border-radius: 6px;
+font-weight: bold;
+margin-top: 10px;
+}
+
+.contact-btn:hover {
+background-color: #1b5e20;
+}
